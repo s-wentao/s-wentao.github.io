@@ -1,0 +1,105 @@
+# Site settings
+title: WT Blog
+SEOTitle: WT Blog
+header-img: img/home.jpg
+email: wentao.sunny@gmail.com
+description: "I can make it through the rain."
+keyword: "Sun, WT Blog, WT 博客, sunwentao, WT, Python, AI, 深度学习, 人工智能, 机器学习, 数据分析"
+url: "http://s-wentao.github.io"          # your host, for absolute URL
+baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+github_repo: "https://github.com/s-wentao/s-wentao.github.io" # you code repository
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "突破自己，事在人为。"
+sidebar-avatar: /img/me.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# SNS settings
+RSS: false
+# weibo_username:     xxx
+#zhihu_username:     xxx
+github_username:    s-wentao
+#facebook_username:  xxx
+#jianshu_username:   xxx
+#twitter_username:   xxx
+
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+
+# Gitalk
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: a99d654d605237692197                            #生成的clientID
+  clientSecret: 5ec1e1b45f1f0a77bfc6b43d071d6677b8ea919d    #生成的clientSecret
+  repo: s-wentao.github.io    #仓库名称
+  owner: s-wentao    #github用户名
+  admin: s-wentao
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+
+
+# 统计
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id: fd856df6c7280bda011310a8d5881bb0
+
+# Google Analytics
+ga_track_id: 'UA-147388300-1'            # Format: UA-xxxxxx-xx
+#ga_domain: auto               # 默认的是 auto, 如果没有自己的域名，需要改成auto
+
+
+
+
+
+# Featured Tags
+featured-tags: true                     # 是否使用首页标签
+featured-condition-size: 0              # 相同标签数量大于这个数，才会出现在首页
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+friends: [
+    {
+        title: "Google",
+        href: "https://www.google.com/"
+    },{
+        title: "Google Developer",
+        href: "https://developers.google.com"
+    }
+]
